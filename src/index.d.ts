@@ -33,8 +33,8 @@ export interface GuessOptions {
     limit?: number;
 }
 
-declare module '@horizon-rs/language-guesser' {
-    export declare class Language {
+declare module '@kenan/language-guesser' {
+    export class Language {
         private languagesAlpha3: Record<string, { alpha2: string; alpha3: string; name: string }>;
         private languagesAlpha2: Record<string, { alpha2: string; alpha3: string; name: string }>;
         private extraSentences: [string, string][];
@@ -61,7 +61,7 @@ declare module '@horizon-rs/language-guesser' {
         private static lansplit(s: string): string[];
         private static addModel(script: string, name: string, value: any): void;
         private addModel(script: string, name: string, value: any): void;
-        
+
         private static buildModel(): void;
     }
 }

@@ -1,5 +1,3 @@
-const Language = import("./language.js");
+import { Language } from "./language.js";
 
-export default {
-  Language,
-};
+export { Language };

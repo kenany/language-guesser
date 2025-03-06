@@ -1,17 +1,21 @@
 {
-  "name": "@horizon-rs/language-guesser",
+  "name": "@kenan/language-guesser",
   "version": "0.1.1",
   "description": "TypeScript compatible language guesser based on n-grams",
   "type": "module",
   "license": "MIT",
   "types": "src/index.d.ts",
-  "main": "src/index.cjs",
-  "module": "src/index.js",
+  "exports": "./src/index.js",
+  "files": ["src"],
   "scripts": {
+    "lint-attw": "attw --pack",
+    "lint-publint": "publint --strict",
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "@arethetypeswrong/cli": "0.17.4",
+    "jest": "29.7.0",
+    "publint": "0.3.8"
   },
   "directories": {
     "test": "test"

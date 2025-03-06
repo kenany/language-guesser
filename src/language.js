@@ -46,7 +46,7 @@ const und = () => [["und", 1]];
 /**
  * Represents a language detection utility.
  */
-class Language {
+export class Language {
   constructor() {
     this.languagesAlpha3 = {};
     this.languagesAlpha2 = {};
@@ -444,5 +444,3 @@ class Language {
 }
 
 Language.buildModel();
-
-export default Language;
